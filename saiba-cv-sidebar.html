@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Saiba CV - Sidebar</title>
+    <style type="text/css">
+      :root {
+        --background-color: #18181B;
+        --font-color: #F5F5F5;
+        --highlight-color: #3B82F6;
+        --muted-color: #71717A;
+      }
+
+      html, body {
+        height: 100%;
+        margin: 0px;
+        padding: 0px;
+      }
+
+      .wrapper {
+        display: flex;
+      }
+
+      .sidebar, .container {
+        height: 100vh;
+      }
+
+      .sidebar {
+        background: var(--background-color);
+        color: var(--font-color);
+        text-align: center;
+        padding: 15px;
+      }
+
+      .container {
+        background: var(--font-color);
+        color: var(--background-color);
+        flex-grow: 1;
+      }
+
+      @media print {
+
+      }
+    </style>
+  </head>
+  <body>
+    <main class="wrapper">
+      <header class="sidebar">
+        <img src="/images/logo.png" />
+        <h1>Saiba Tenpura</h1>
+      </header>
+      <section class="container">
+
+      </section>
+    </main>
+  </body>
+</html>
+
