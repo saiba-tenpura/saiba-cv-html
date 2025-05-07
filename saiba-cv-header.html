@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Saiba CV - Header</title>
     <style type="text/css">
+      @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
       :root {
         --background-color: #18181B;
         --font-color: #F5F5F5;
@@ -14,46 +16,267 @@
       }
 
       html, body {
-        height: 100%;
         margin: 0px;
         padding: 0px;
+        font-family: "Raleway", sans-serif;
+        font-optical-sizing: auto;
+        font-style: normal;
+        font-size: 0.9rem;
+      }
+
+      h1, h2, h3, h4, h5, h6 {
+        font-weight: bold;
+        margin: 0;
+      }
+
+      h1 {
+        font-size: 1.5rem;
+        margin: 0.75rem 0;
+      }
+
+      h2 {
+        font-size: 1.25rem;
+        margin: 0.85rem 0;
+      }
+
+      h3 {
+        font-size: 1.0rem;
+        margin: 1rem 0;
+      }
+
+      ul {
+        list-style: none;
+        padding: 0;
+      }
+
+      ul, li {
+        margin-bottom: 0.5rem;
       }
 
       .wrapper {
-        display: flex;
-        flex-direction: column;
-        height: 100vh;
+        page-break-after: always;
       }
 
       .header {
         background: var(--background-color);
         color: var(--font-color);
         display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-size: 1rem;
+        white-space: nowrap;
+        padding: 0.75rem 3rem;
+      }
+
+      .logo img {
+        width: 6rem;
+      }
+
+      .name h1 {
+        margin-bottom: 0.1rem;
+      }
+
+      .name h2 {
+        font-weight: normal;
+        margin-top: 0;
+      }
+
+      .contact h1 {
         text-align: center;
-        padding: 15px;
+      }
+
+      .contact ul {
+        padding: 0 0.1rem 0 0.25rem;
+      }
+
+      .contact li {
+        margin-bottom: 0.75rem;
+      }
+
+      .contact i {
+        margin-right: 0.5rem;
       }
 
       .container {
-        background: var(--font-color);
         color: var(--background-color);
         flex-grow: 1;
+        padding: 0.25rem 4.5rem;
       }
 
-      @media print {
+      .highlight {
+        color: var(--highlight-color);
+      }
 
+      .muted {
+        color: var(--muted-color);
+      }
+
+      .skills, .exp-section {
+        margin-bottom: 1.25rem;
+      }
+
+      .exp-section h3, .exp-section h4 {
+        margin-bottom: 0.1rem;
+      }
+
+      .exp-section ul {
+        list-style: inherit;
+        padding-left: 1rem;
+      }
+
+      .exp-header {
+        margin-bottom: 0.5rem;
+      }
+
+      .exp-line {
+        display: flex;
+        justify-content: space-between;
+        font-size: 0.8rem;
+        font-weight: bold;
       }
     </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   </head>
   <body>
     <main class="wrapper">
       <header class="header">
-        <img src="/images/logo.png" />
-        <h1>Saiba Tenpura</h1>
-      </header>
-      <section class="container">
+        <div class="logo">
+          <img src="/images/logo.svg" />
+        </div>
 
-      </section>
+        <section class="name">
+          <h1>Saiba Tenpura</h1>
+          <h2>Full Stack Developer</h2>
+        </section>
+
+        <section class="contact">
+          <ul>
+            <li><i class="fa-solid fa-envelope"></i>saiba@email.com</li>
+            <li><i class="fa-solid fa-phone"></i>+49 123 4567 89</li>
+          </ul>
+        </section>
+
+        <section class="contact">
+          <ul>
+            <li><i class="fa-solid fa-earth-americas"></i>saiba.tenpura.me</li>
+            <li><i class="fa-brands fa-github"></i>github.com/saiba-tenpura</li>
+          </ul>
+        </section>
+      </header>
+      <div class="container">
+        <h2>Skills</h2>
+
+        <section class="skills">
+          <ul>
+            <li><b>Frontend:</b> HTML, CSS, JavaScript, TypeScript, Tailwind, Nuxt, Vue.js, Next.js, Bootstrap, NPM</li>
+            <li><b>Backend:</b> PHP, Laravel, MySQL, Bash, Traefik, Python, Powershell</li>
+            <li><b>DevOps:</b> Git, Ansible, Docker, Jenkins</li>
+            <li><b>Miscellaneous:</b> Blender, Gimp, Godot, InkScape, LaTeX</li>
+          </ul>
+        </section>
+
+        <h2>Work Experience</h2>
+
+        <section class="exp-section">
+          <div class="exp-header">
+            <h3>Full Stack Developer</h3>
+            <h4 class="highlight">Corparation Inc.</h4>
+            <div class="exp-line muted">
+              <div><i class="fa-solid fa-calendar-days"></i> 12/2015 - Present</div>
+              <div><i class="fa-solid fa-location-dot"></i> Somewhere</div>
+            </div>
+          </div>
+          <div class="exp-body">
+            <ul>
+              <li>Lorem ipsum dolor sit atment, consectetur adipiscing elit. Donec a diam lectus.</li>
+              <li>Lorem ipsum dolor sit atment, consectetur adipiscing elit. Donec a diam lectus.</li>
+              <li>Lorem ipsum dolor sit atment, consectetur adipiscing elit. Donec a diam lectus.</li>
+              <li>Lorem ipsum dolor sit atment, consectetur adipiscing elit. Donec a diam lectus.</li>
+            </ul>
+          </div>
+        </section>
+
+        <h2>Internships</h2>
+
+        <section class="exp-section">
+          <div class="exp-header">
+            <h3>Software Developer</h3>
+            <h4 class="highlight">DotCom Inc.</h4>
+            <div class="exp-line muted">
+              <div><i class="fa-solid fa-calendar-days"></i> 04/2015 - 05/2015</div>
+              <div><i class="fa-solid fa-location-dot"></i> Else</div>
+            </div>
+          </div>
+          <div class="exp-body">
+            <ul>
+              <li>Lorem ipsum dolor sit atment, consectetur adipiscing elit. Donec a diam lectus.</li>
+              <li>Lorem ipsum dolor sit atment, consectetur adipiscing elit. Donec a diam lectus.</li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="exp-section">
+          <div class="exp-header">
+            <h3>Web Developer</h3>
+            <h4 class="highlight">Famous Inc.</h4>
+            <div class="exp-line muted">
+              <div><i class="fa-solid fa-calendar-days"></i> 05/2014 - 06/2014</div>
+              <div><i class="fa-solid fa-location-dot"></i> Far Away</div>
+            </div>
+          </div>
+          <div class="exp-body">
+            <ul>
+              <li>Lorem ipsum dolor sit atment, consectetur adipiscing elit. Donec a diam lectus.</li>
+              <li>Lorem ipsum dolor sit atment, consectetur adipiscing elit. Donec a diam lectus.</li>
+            </ul>
+          </div>
+        </section>
+
+        <h2>Education</h2>
+
+        <section class="exp-section">
+          <div class="exp-header">
+            <h3>Vocational Training</h3>
+            <h4 class="highlight">Vocational School</h4>
+            <div class="exp-line muted">
+              <div><i class="fa-solid fa-calendar-days"></i> 09/2013 - 07/2016</div>
+              <div><i class="fa-solid fa-location-dot"></i> Far Away</div>
+            </div>
+          </div>
+          <div class="exp-body">
+            Lorem ipsum dolor sit atment, consectetur adipiscing elit. Donec a diam lectus.
+          </div>
+        </section>
+
+        <section class="exp-section">
+          <div class="exp-header">
+            <h3>Highschool Diploma</h3>
+            <h4 class="highlight">Not So Highschool</h4>
+            <div class="exp-line muted">
+              <div><i class="fa-solid fa-calendar-days"></i> 09/2013 - 07/2015</div>
+              <div><i class="fa-solid fa-location-dot"></i> Not So Close</div>
+            </div>
+          </div>
+          <div class="exp-body">
+            Lorem ipsum dolor sit atment, consectetur adipiscing elit. Donec a diam lectus.
+          </div>
+        </section>
+
+        <section class="exp-section">
+          <div class="exp-header">
+            <h3>Secondary School Certificate</h3>
+            <h4 class="highlight">First School</h4>
+            <div class="exp-line muted">
+              <div><i class="fa-solid fa-calendar-days"></i> 09/2008 - 07/2015</div>
+              <div><i class="fa-solid fa-location-dot"></i> Close</div>
+            </div>
+          </div>
+          <div class="exp-body">
+            Lorem ipsum dolor sit atment, consectetur adipiscing elit. Donec a diam lectus.
+          </div>
+        </section>
+
+      </div>
     </main>
   </body>
 </html>
-
