@@ -156,6 +156,17 @@ a {
   padding-left: 1rem;
 }
 
+.exp-headline {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.2rem;
+}
+
+.exp-headline h3, .exp-headline h4 {
+  margin-top: 0;
+  margin-bottom: 0px;
+}
+
 .exp-header {
   margin-bottom: 0.5rem;
 }
