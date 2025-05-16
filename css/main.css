@@ -3,7 +3,7 @@
 :root {
   --background-color: #18181B;
   --font-color: #F5F5F5;
-  --highlight-color: #3B82F6;
+  --highlight-color: #398ff9;
   --muted-color: #71717A;
 }
 
@@ -129,6 +129,7 @@ a {
 
 .sidebar-layout .container {
   padding: 0.25rem 1rem;
+  padding-right: 2.5rem;
 }
 
 .header-layout .container {

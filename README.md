@@ -1,4 +1,4 @@
-# Saiba CV - HTML (WIP)
+# Saiba CV - HTML
 
 Repo for storing my personal HTML based curriculum vitae templates.
 
