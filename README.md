@@ -12,7 +12,11 @@ The easiest way to create the PDFs is using Firefox together with a local Python
 python -m http.server -d .
 ```
 
-Visit localhost:8000 in Firefox, Ctrl + P and "Save to PDF".
+Converting to PDF:
+- Open localhost:8000 in your browser
+- Hit Ctrl + P
+- Adjust settings (Set Margins to None, Disable "Print headers and footers", Enable "Print backgrounds")
+- Save to PDF.
 
 Use magick to generate the example JPG images from the PDF files.
 ```bash
